@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página de vendas</title>
+</head>
+<body>
+
+<header>
+    <h1>Logo Referencial</h1>
+    <button class = "wpp">Whats-app
+    <a href="https://wa.me/seunumero" target="_blank" class="wpp">
+    💬   Fale conosco
+    </a>
+    </button>
+</header>
+
+<main>
+    <article>
+        <div class="box1">
+            <h2>Semiextensivo Online - R$ 89,00</h2>
+
+            <div class="box2">
+                <h3>Detalhes do curso:</h3>
+                <ol>
+                    <li>17 semanas</li>
+                    <li>340 aulas</li>
+                    <li>Redação nota 1000</li>
+                    <li>Estrutura AIDA:atenção,interesse,desejo e ação.</li>
+                </ol>
+            </div>
+
+            <div class="box3">
+                <h3>O que você vai receber:</h3>
+                <ol>
+                    <li>Método focado em vestibulares</li>
+                    <li>Plano de estudo</li>
+                    <li>Redação corrigida</li>
+                    <li>Comunidade de estudo</li>
+                    <li>PDF com temas de redação</li>
+                    <li>Canal de comunicação direto pelo WhatsApp</li>
+                </ol>
+            </div>
+        </div>
+    </article>
+
+    <div class="compra">
+        <button class="compra">R$ 89,00</button>
+        <h4>Oferta relâmpago para os primeiros 100 calouros.</h4>
+    </div>
+       
+      <div>
+        <h3>O que nossos alunos penam sobre nós</h3>
+      <div class="depoimento-card">
+    
+        <img src="img\bastardos.jpg" alt="Foto do aluno" class="foto-aluno">
+        <button class="nome-aluno" onclick="toggleDepoimento(this)">Pedro Caetano</button>
+        <p class="texto-depoimento">
+            "Esse curso foi essencial para a minha aprovação, agradeço toda a equipe e pelo acompanhamento que foi dado!"
+        </p>
+    </div>
+    </div>
+</main>
+
+</body>
+<script>
+    
+function toggleDepoimento(botao) {
+    let depoimento = botao.nextElementSibling;
+    depoimento.style.display = (depoimento.style.display === "block") ? "none" : "block";
+}
+
+</script>
+</html>
